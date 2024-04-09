@@ -17,3 +17,20 @@ class DataTransformationArtifact:
     train_transform_file_path: str
 
     test_transform_file_path: str
+
+
+@dataclass
+class ModelTrainerArtifact:
+    trained_model_path: str
+
+
+# @dataclass
+# class ModelEvaluationArtifact:
+#     model_accuracy: float
+#
+#
+# @dataclass
+# class ModelPusherArtifact:
+#     bentoml_model_name: str
+#
+#     bentoml_service_name: str
