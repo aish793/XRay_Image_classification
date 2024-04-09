@@ -62,7 +62,7 @@ STEP_SIZE: int = 6
 
 GAMMA: int = 0.5
 
-EPOCH: int = 1000
+EPOCH: int = 500
 
 BENTOML_MODEL_NAME: str = "xray_model"
 

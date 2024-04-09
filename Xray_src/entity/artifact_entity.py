@@ -24,10 +24,10 @@ class ModelTrainerArtifact:
     trained_model_path: str
 
 
-# @dataclass
-# class ModelEvaluationArtifact:
-#     model_accuracy: float
-#
+@dataclass
+class ModelEvaluationArtifact:
+    model_accuracy: float
+
 #
 # @dataclass
 # class ModelPusherArtifact:
