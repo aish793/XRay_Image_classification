@@ -41,7 +41,7 @@ class ModelEvaluation:
                 self.data_transformation_artifact.transformed_test_object
             )
 
-            model: Module = Net()
+            # model: Module = Net()
 
             model: Module = torch.load(self.model_trainer_artifact.trained_model_path)
 

@@ -63,7 +63,8 @@ class DataTransformationConfig:
 @dataclass
 class ModelTrainerConfig:
     def __init__(self):
-        self.artifact_dir: int = os.path.join(ARTIFACT_DIR, TIMESTAMP, "model_training")
+        # self.artifact_dir: int = os.path.join(ARTIFACT_DIR, TIMESTAMP, "model_training")
+        self.artifact_dir: int = os.path.join(MODEL_DIR, "model_training")
 
         self.trained_bentoml_model_name: str = "xray_model"
 
@@ -94,7 +95,7 @@ class ModelEvaluationConfig:
 
         self.optimizer_params: dict = {"lr": 0.01, "momentum": 0.8}
 #
-# # Model Pusher Configurations
+# Model Pusher Configurations
 # @dataclass
 # class ModelPusherConfig:
 #     def __init__(self):

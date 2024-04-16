@@ -1,0 +1,15 @@
+service: "Xray_src.ml.model.model_service:svc"
+labels:
+    owner: Aishwarya Jauhari
+    stage: dev
+include:
+    - "Xray_src/ml/model/model_service.py"
+    - "Xray_src/constant/training_pipeline/__init__.py"
+python:
+    packages:
+        - torch
+        - torchvision
+        - Pillow
+        - numpy
+    extra_index_url:
+        - "https://download.pytorch.org/whl/cpu"
