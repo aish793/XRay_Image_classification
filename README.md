@@ -1,1 +1,2 @@
-### XRay image classification
+### XRay image classification project
+
