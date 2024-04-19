@@ -5,8 +5,8 @@ from torchvision.transforms import transforms
 from PIL import Image
 from pathlib import Path
 
-# started
-# this is for saving images and prediction
+
+# To save the images
 def save_image(uploaded_file):
     if uploaded_file is not None:
         save_path = os.path.join("images", "input.jpeg")
